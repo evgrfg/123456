@@ -1,25 +1,28 @@
 import sqlite3
-conn = sqlite3.connect("orders.db")
-cur = conn.cursor()
-cur.execute("ВАШ-SQL-ЗАПРОС-ЗДЕСЬ;")
-cur.execute("""CREATE TABLE IF NOT EXISTS users(
-   userid INT PRIMARY KEY,
-   fname TEXT,
-   lname TEXT,
-   gender TEXT);
-""")
-conn.commit()
-cur.execute("""CREATE TABLE IF NOT EXISTS orders(
-   orderid INT PRIMARY KEY,
-   date TEXT,
-   userid TEXT,
-   total TEXT);
-""")
-conn.commit()
-cur.execute("""INSERT INTO users(userid, fname, lname, gender) 
-   VALUES('00001', 'Alex', 'Smith', 'male');""")
-conn.commit()
-#customers = [
+nexto = sqlite3.connect('orders.db')
+sur = nexto.cursor()
+
+#sur.execute("""CREATE TABLE IF NOT EXISTS users(
+#   userid INT PRIMARY KEY,
+#   fname TEXT,
+#   lname TEXT,
+#   gender TEXT);
+#""")
+#nexto.commit()
+#
+#sur.execute("""CREATE TABLE IF NOT EXISTS orders(
+#   orderid INT PRIMARY KEY,
+#   date TEXT,
+#   userid TEXT,
+#   total TEXT);
+#""")
+#nexto.commit()
+
+#users = [('00003', 'Peter', 'Parker', 'Male'), ('00004', 'Bruce', 'Wayne', 'male')]
+#sur.executemany("INSERT INTO users VALUES(?, ?, ?, ?);", users)
+#nexto.commit()
+
+#cheliki = [
 #  ('00005', 'Stephanie', 'Stewart', 'female'), ('00006', 'Sincere', 'Sherman', 'female'), ('00007', 'Sidney', 'Horn', 'male'), 
 #  ('00008', 'Litzy', 'Yates', 'female'), ('00009', 'Jaxon', 'Mills', 'male'), ('00010', 'Paul', 'Richard', 'male'), 
 #  ('00011', 'Kamari', 'Holden', 'female'), ('00012', 'Gaige', 'Summers', 'female'), ('00013', 'Andrea', 'Snow', 'female'), 
@@ -30,7 +33,7 @@ conn.commit()
 #  ('00026', 'Rohan', 'Peterson', 'male'), ('00027', 'Irene', 'Walters', 'female'), ('00028', 'Lilia', 'Sellers', 'female'), 
 #  ('00029', 'Perla', 'Jefferson', 'female'), ('00030', 'Ashley', 'Klein', 'female')
 #]
-#orders = [
+#escho_cheliki = [
 #  ('00001', '2020-01-01', '00025', '178'), ('00002', '2020-01-03', '00025', '39'), ('00003', '2020-01-07', '00016', '153'), 
 #  ('00004', '2020-01-10', '00015', '110'), ('00005', '2020-01-11', '00024', '219'), ('00006', '2020-01-12', '00029', '37'), 
 #  ('00007', '2020-01-14', '00028', '227'), ('00008', '2020-01-18', '00010', '232'), ('00009', '2020-01-22', '00016', '236'), 
@@ -66,15 +69,18 @@ conn.commit()
 #  ('00097', '2020-08-28', '00004', '206'), ('00098', '2020-08-30', '00017', '114'), ('00099', '2020-08-31', '00017', '169'), 
 #  ('00100', '2020-09-02', '00022', '226')
 #]
-cur.execute("SELECT * FROM users;")
-one_result = cur.fetchone()
-print(one_result)
+#
+#sur.executemany("INSERT INTO users VALUES(?, ?, ?, ?);", cheliki)
+#sur.executemany("INSERT INTO orders VALUES(?, ?, ?, ?);", escho_cheliki)
+#nexto.commit()
 
-cur.execute("SELECT * FROM users;")
-three_results = cur.fetchmany(3)
-print(three_results)
-
-
+sur.execute("SELECT * FROM users WHERE gender = 'female';")
+rez = sur.fetchmany(10)
+print(rez)
+#
+#sur.execute("SELECT * FROM users;")
+#all = sur.fetchall()
+#print(all)
 
 
 
