@@ -82,6 +82,18 @@ print(rez)
 #all = sur.fetchall()
 #print(all)
 
+nexto = sqlite3.connect('escho_cheliki.db')
+sur = nexto.cursor()
+b = True
 
+while b == True:
+    a = int(input('Введите: 1 - внесение данных\n 2 - выведение данных\n 0 - выйти \n - '))
+    if a == 1:
+        create()
+    elif a == 2:
+        stroka = input("SQL запрос: ")
+        sql(stroka)
+    elif a == 0:
+        b = False
 
 
