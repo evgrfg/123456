@@ -1,5 +1,7 @@
 # Козлова Карина 122
-# evgrfg.github.io/
+# evgrfg.github.io
+# codepen.io/evgrfg
+# https://evgrfg.wordpress.com
 # https://openprocessing.org/user/344115
 # всё.xlsx - все работы в Excel
 # из 10 в другую.py - перевод из десятичной системы счисления в какую-либо другую
