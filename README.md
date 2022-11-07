@@ -36,4 +36,4 @@
  
  ![lagrida_latex_editor (2)](https://user-images.githubusercontent.com/114381884/198813387-275b565c-ff39-4a90-94c8-ca8dac916079.png)
 
-$$ \overline{E}^{2}_{0}= \sqrt{\frac{Fa^{2}_{0}}{(x-1)\cdot{x}}}+\alpha^{2}_{1}+\beta^{2}_{1} $$
+$$ \overline{E}^{2}_{0}= \sqrt{\frac{Fa_{0}^{2}}{(x-1)\cdot{x}}}+\alpha^{2}_{1}+\beta^{2}_{1} $$
