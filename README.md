@@ -32,8 +32,10 @@
  
  $$ A\vee  A = A $$
  
- ![lagrida_latex_editor (1)](https://user-images.githubusercontent.com/114381884/198813054-e6ad7b92-1e52-48a5-a767-ce85116f95de.png)
+
  
  ![lagrida_latex_editor (2)](https://user-images.githubusercontent.com/114381884/198813387-275b565c-ff39-4a90-94c8-ca8dac916079.png)
 
 $$ \overline{E}_0^{2}= \sqrt{\frac{Fa_0^{2}}{(x-1)\cdot{x}}}+\alpha_1^{2}+\beta_1^{2} $$
+![смайлик](https://user-images.githubusercontent.com/114381884/201376822-26b59e9e-cd4d-4862-b076-6646bcceca2f.png)
+![смайлик](https://user-images.githubusercontent.com/114381884/201377067-cb90bb3b-03d6-4ab6-9b6b-00fc3edfeab4.png)
