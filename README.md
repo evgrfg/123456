@@ -38,4 +38,4 @@
 
 $$ \overline{E}_0^{2}= \sqrt{\frac{Fa_0^{2}}{(x-1)\cdot{x}}}+\alpha_1^{2}+\beta_1^{2} $$
 ![смайлик](https://user-images.githubusercontent.com/114381884/201376822-26b59e9e-cd4d-4862-b076-6646bcceca2f.png)
-![смайлик](https://user-images.githubusercontent.com/114381884/201377067-cb90bb3b-03d6-4ab6-9b6b-00fc3edfeab4.png)
+
